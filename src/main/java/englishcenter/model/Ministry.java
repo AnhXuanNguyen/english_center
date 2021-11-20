@@ -1,0 +1,25 @@
+package englishcenter.model;
+
+public class Ministry extends User{
+    private int id;
+
+    public Ministry(String name, String email, String dob, String address, String phone, String username, String password, int id) {
+        super(name, email, dob, address, phone, username, password);
+        this.id = id;
+    }
+
+    public Ministry() {
+    }
+
+    public Ministry(String name, String email, String dob, String address, String phone, String username, String password) {
+        super(name, email, dob, address, phone, username, password);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+}
