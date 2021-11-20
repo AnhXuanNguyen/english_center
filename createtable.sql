@@ -54,12 +54,6 @@ create table grade(
     foreign key (diaryid) references diary(id),
     foreign key (courseteacherid) references teacher_course(id)
 );
-create table mark(
-    id int auto_increment primary key ,
-    smark double,
-    studentid int,
-    foreign key(studentid) references student(id)
-);
 create table student(
     id int auto_increment primary key ,
     name nvarchar(50),
@@ -71,4 +65,10 @@ create table student(
     password varchar(20),
     gradeid int,
     foreign key (gradeid) references grade(id)
+);
+create table mark(
+                     id int auto_increment primary key ,
+                     smark double,
+                     studentid int,
+                     foreign key(studentid) references student(id)
 );
