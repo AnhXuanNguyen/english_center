@@ -15,7 +15,7 @@
 <c:if test="${mes != null}">
     <h2>${mes}</h2>
 </c:if>
-<td><a href="/TeacherServlet?action=create">Them</a></td>
+<td><a href="/TeacherServlet?action=create&id=${ministryid}">Them</a></td>
 <table>
     <tr>
         <th>Ten</th>
@@ -26,13 +26,13 @@
     </tr>
     <c:forEach items="${teachers}" var="teacher">
         <tr>
-            <td>${teaacher.name}</td>
+            <td>${teacher.name}</td>
             <td>${teacher.email}</td>
             <td>${teacher.dob}</td>
             <td>${teacher.address}</td>
             <td>${teacher.phone}</td>
-            <td><a href="/TeacherServlet?action=edit&id=${teacher.id}">Sua</a></td>
-            <td><a href="/TeacherServlet?action=drop&id=${teacher.id}">Xoa</a></td>
+            <td><a href="/TeacherServlet?action=edit&id=${teacher.id}&mid=${ministryid}">Sua</a></td>
+            <td><a href="/TeacherServlet?action=drop&id=${teacher.id}&mid=${ministryid}">Xoa</a></td>
         </tr>
     </c:forEach>
 </table>

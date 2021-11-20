@@ -17,6 +17,7 @@
         <a href="/MinistryServlet?action=info&id=${ministry.id}">Xem thong tin</a>
         <a href="/MinistryServlet?action=editpass&id=${ministry.id}">Doi mat khau</a>
         <a href="/TeacherServlet?action=list&id=${ministry.id}">danh sach giao vien</a>
+        <a href="/CourseServlet?action=CourseServlet&id=${ministry.id}">Danh sach khoa hoc</a>
         <a href="/MinistryServlet?action=logout">Dang xuat</a>
     </c:if>
 </body>

@@ -17,7 +17,7 @@
 </c:if>
 <c:if test="${teacher != null}">
     <form method="post">
-        <table border="1">
+        <table>
             <tr>
                 <th>Ten</th>
                 <th>Email</th>

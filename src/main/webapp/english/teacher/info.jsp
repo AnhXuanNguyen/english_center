@@ -34,6 +34,12 @@
             <th>SDT</th>
             <td>${teacher.phone}</td>
         </tr>
+        <tr>
+            <td>Các môn học đang dạy: </td>
+            <c:forEach items="${course}" var="c">
+                <td>${c.name}</td>
+            </c:forEach>
+        </tr>
     </table>
     <a href="/TeacherServlet?action=welcome&id=${teacher.id}">quay lai trang chu</a>
 </c:if>
