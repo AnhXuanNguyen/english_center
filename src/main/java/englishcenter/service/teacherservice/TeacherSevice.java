@@ -37,7 +37,7 @@ public class TeacherSevice implements ITeacherSevice{
                 String phone = rs.getString(6);
                 String username = rs.getString(7);
                 String password = rs.getString(8);
-                teachers.add(new Teacher(name, email, dob, address, phone, username, password));
+                teachers.add(new Teacher(name, email, dob, address, phone, username, password, id));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -47,7 +47,26 @@ public class TeacherSevice implements ITeacherSevice{
 
     @Override
     public Teacher selectTeacherById(int id) {
-        return null;
+        Teacher teacher = null;
+        String query = "call selectteacherbyid(?);";
+        try {
+            CallableStatement callableStatement = connection.prepareCall(query);
+            callableStatement.setInt(1,id);
+            ResultSet rs = callableStatement.executeQuery();
+            if (rs.next()){
+                String name = rs.getString(2);
+                String email = rs.getString(3);
+                String dob = rs.getString(4);
+                String address = rs.getString(5);
+                String phone = rs.getString(6);
+                String username = rs.getString(7);
+                String password = rs.getString(8);
+                teacher = new Teacher(name, email, dob, address, phone, username, password, id);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return teacher;
     }
 
     @Override
@@ -67,6 +86,14 @@ public class TeacherSevice implements ITeacherSevice{
 
     @Override
     public void changePassword(Teacher teacher) {
-
+        String query = "call updatepasswordteacher(?, ?);";
+        try {
+            CallableStatement callableStatement = connection.prepareCall(query);
+            callableStatement.setInt(1, teacher.getId());
+            callableStatement.setString(2, teacher.getPassword());
+            callableStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

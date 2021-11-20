@@ -14,8 +14,8 @@
 <body>
 <c:if test="${teacher != null}">
     <h1>Hello ${teacher.name}</h1>
-    <a href="/TeacherServlet?action=info&id=${ministry.id}">Xem thong tin</a>
-    <a href="/TeacherServlet?action=editpass&id=${ministry.id}">Doi mat khau</a>
+    <a href="/TeacherServlet?action=info&id=${teacher.id}">Xem thong tin</a>
+    <a href="/TeacherServlet?action=editpass&id=${teacher.id}">Doi mat khau</a>
     <a href="/TeacherServlet?action=logout">Dang xuat</a>
 </c:if>
 </body>
