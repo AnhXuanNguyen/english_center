@@ -19,7 +19,7 @@ public class ConnectionSigleton {
                 e.printStackTrace();
             }
         }
-        System.out.println("da ket noi");
+        System.out.println("Connected");
         return connection;
     }
 }
