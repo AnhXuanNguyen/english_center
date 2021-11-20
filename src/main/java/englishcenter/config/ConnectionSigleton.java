@@ -8,7 +8,7 @@ public class ConnectionSigleton {
     private static Connection connection;
     private static String URL = "jdbc:mysql://localhost:3306/englishcenter";
     private static String username = "root";
-    private static String password = "123456789";//anh em tự thay đổi password nhé
+    private static String password = "123456@Abc";
 
     public static Connection getConnection() {
         if (connection == null) {
@@ -19,7 +19,7 @@ public class ConnectionSigleton {
                 e.printStackTrace();
             }
         }
-        System.out.println("da ket noi");
+        System.out.println("Connected");
         return connection;
     }
 }
