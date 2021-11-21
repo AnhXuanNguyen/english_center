@@ -101,32 +101,10 @@
                     </div>
                 </form>
                 <a href="/MinistryServlet?action=welcome&id=${ministryid}">Back To Home Page</a>
-
             </div>
         </div>
     </div>
     <hr>
-
-
-<%--    <form method="post">--%>
-<%--        <table border="1">--%>
-<%--            <tr>--%>
-<%--                <th>New Name</th>--%>
-<%--                <th>New Email</th>--%>
-<%--                <th>New Date Of Birth</th>--%>
-<%--                <th>New Address</th>--%>
-<%--                <th>New Phone Number</th>--%>
-<%--            </tr>--%>
-<%--            <tr>--%>
-<%--                <td><input type="text" "></td>--%>
-<%--                <td><input type="text" "></td>--%>
-<%--                <td><input type="date" ></td>--%>
-<%--                <td><input type="text" ></td>--%>
-<%--                <td><input type="text" ></td>--%>
-<%--            </tr>--%>
-<%--            <tr><td><input type="submit" value="Edit"></td></tr>--%>
-<%--        </table>--%>
-<%--    </form>--%>
 </c:if>
 </body>
 </html>

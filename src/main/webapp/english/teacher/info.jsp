@@ -128,6 +128,16 @@
                             </tr>
 
                             </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-envelope text-primary"></span>
+                                        Các môn học đang dạy:
+                                    </strong> </td>
+                                <c:forEach items="${course}" var="c">
+                                    <td>${c.name}</td>
+                                </c:forEach>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
@@ -135,8 +145,6 @@
             </div>
         </div>
     </div>
-
-
 </c:if>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
