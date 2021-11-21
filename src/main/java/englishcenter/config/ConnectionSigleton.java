@@ -8,7 +8,7 @@ public class ConnectionSigleton {
     private static Connection connection;
     private static String URL = "jdbc:mysql://localhost:3306/englishcenter";
     private static String username = "root";
-    private static String password = "123456789";
+    private static String password = "123456@Abc";
 
     public static Connection getConnection() {
         if (connection == null) {
