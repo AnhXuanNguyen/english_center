@@ -39,9 +39,10 @@ begin
     update course set name = newname where id = course_id;
 end $$
 delimiter ;
-call updatecourse(1, 'xuan anh');
-
+call updatecourse(1, 'Toeic 450');
 delimiter $$
+
+select * from course;
 create procedure insertcourse(
     newname varchar(50)
 )
