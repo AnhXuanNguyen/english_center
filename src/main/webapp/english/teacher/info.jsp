@@ -22,7 +22,7 @@
         }
 
         body {
-            background-color: #bce8ca;
+            background-color: #ffffff;
         }
     </style>
 </head>
@@ -137,29 +137,6 @@
     </div>
 
 
-    <%--    <table class="table table-striped table-hover">--%>
-    <%--        <tr>--%>
-    <%--            <th>Name</th>--%>
-    <%--            <td></td>--%>
-    <%--        </tr>--%>
-    <%--        <tr>--%>
-    <%--            <th>Email</th>--%>
-    <%--            <td>${teacher.email}</td>--%>
-    <%--        </tr>--%>
-    <%--        <tr>--%>
-    <%--            <th>Date Of Birth</th>--%>
-    <%--            <td>${teacher.dob}</td>--%>
-    <%--        </tr>--%>
-    <%--        <tr>--%>
-    <%--            <th>Address</th>--%>
-    <%--            <td>${teacher.address}</td>--%>
-    <%--        </tr>--%>
-    <%--        <tr>--%>
-    <%--            <th>Phone Number</th>--%>
-    <%--            <td></td>--%>
-    <%--        </tr>--%>
-    <%--    </table>--%>
-    <%--    <a href="/TeacherServlet?action=welcome&id=${teacher.id}">Back to home page</a>--%>
 </c:if>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
