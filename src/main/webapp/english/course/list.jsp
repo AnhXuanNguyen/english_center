@@ -12,9 +12,9 @@
     <title>List course</title>
 </head>
 <body>
+<a href="/CourseServlet?action=create&mid=${ministryid}">Them</a>
 <table>
     <tr><th>Name</th></tr>
-    <a href="/CourseServlet?action=create&mid=${ministryid}">Them</a>
     <c:forEach items="${courses}" var="course">
         <tr>
             <td>${course.name}</td>

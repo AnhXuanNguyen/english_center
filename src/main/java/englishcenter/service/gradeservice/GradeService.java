@@ -51,21 +51,58 @@ public class GradeService implements IGradeService{
 
     @Override
     public Grade selectGradebyId(int id) {
-        return null;
+        Grade grade = null;
+        String query = "call selectgradebyid(?);";
+        try {
+            CallableStatement callableStatement = connection.prepareCall(query);
+            callableStatement.setInt(1,id);
+            ResultSet rs = callableStatement.executeQuery();
+            if (rs.next()){
+                String name = rs.getString(2);
+                grade = new Grade(id,name);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return grade;
     }
 
     @Override
     public void insertGrade(Grade grade) {
-
+        String query = "call insertgrade(?);";
+        try {
+            CallableStatement callableStatement = connection.prepareCall(query);
+            callableStatement.setString(1, grade.getName());
+            callableStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void updateGrade(Grade grade) {
-
+        String query = "call updategrade(?,?,?,?);";
+        try {
+            CallableStatement callableStatement = connection.prepareCall(query);
+            callableStatement.setInt(1, grade.getTeacher().getId());
+            callableStatement.setInt(2, grade.getCourse().getId());
+            callableStatement.setInt(3, grade.getId());
+            callableStatement.setString(4, grade.getName());
+            callableStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void dropGrade(Grade grade) {
-
+        String query = "call dropgrade(?);";
+        try {
+            CallableStatement callableStatement = connection.prepareCall(query);
+            callableStatement.setInt(1,grade.getId());
+            callableStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
