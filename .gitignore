@@ -1,0 +1,8 @@
+build
+.gradle
+config
+.idea
+src/main/webapp/index.jsp
+src/main/java/englishcenter/config
+.idea/dataSources.xml
+.gitignore

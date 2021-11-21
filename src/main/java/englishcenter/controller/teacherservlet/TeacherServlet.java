@@ -155,9 +155,9 @@ public class TeacherServlet extends HttpServlet {
         String dob = request.getParameter("dob");
         String address = request.getParameter("address");
         String phone = request.getParameter("phone");
-        String username = request.getParameter("email");
+        String username = request.getParameter("username");
         String password = request.getParameter("password");
-        Teacher teacher = new Teacher(name, email, dob, address, phone, email, password);
+        Teacher teacher = new Teacher(name, email, dob, address, phone, username, password);
         String[] courseidStr = request.getParameterValues("courseid");
         int[] courseids = new int[courseidStr.length];
         for (int i = 0; i < courseidStr.length; i++){
