@@ -12,6 +12,7 @@
     <title>Grade list</title>
 </head>
 <body>
+<a href="/GradeServlet?action=create&id=${ministryid}">Them</a>
 <table>
     <tr>
         <th>Grade name</th>
@@ -37,11 +38,11 @@
             </c:if>
             <td><a href="">Chi tiet</a></td>
             <td><a href="">Chi tiet</a></td>
-            <td><a href="">Chi tiet</a></td>
-            <td><a href="">Sua</a></td>
-            <td><a href="">Xoa</a></td>
+            <td><a href="/GradeServlet?action=edit&id=${g.id}&mid=${ministryid}">Sua</a></td>
+            <td><a href="/GradeServlet?action=drop&id=${g.id}&mid=${ministryid}">Xoa</a></td>
         </tr>
     </c:forEach>
 </table>
+<a href="/MinistryServlet?action=welcome&id=${ministryid}">quay lai trang chu</a>
 </body>
 </html>

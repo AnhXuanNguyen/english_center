@@ -22,6 +22,15 @@ public class Grade {
     public Grade() {
     }
 
+    public Grade(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Grade(String name) {
+        this.name = name;
+    }
+
     public int getId() {
         return id;
     }

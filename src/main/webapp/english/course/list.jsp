@@ -175,6 +175,7 @@
 <p align="center" style="margin: 20px">
     <a style="color: white" href="/MinistryServlet?action=welcome&id=${ministryid}">Back to Ministry home</a>
 </p>
+>>>>>>> e60e35b9b8b0912c0c34a7710ddc8f39d9c23e20
 </body>
 </html>
 <%--<html>--%>
