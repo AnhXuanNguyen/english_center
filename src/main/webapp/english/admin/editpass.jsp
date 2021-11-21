@@ -99,15 +99,15 @@
     <h1 class="title">Edit Password</h1>
     <form class="contact-form row" method="post">
         <div class="form-field col-lg-12">
-            <input id="oldpass" class="input-text js-input" type="password" required>
+            <input id="oldpass" name="oldpass" class="input-text js-input" type="password" required>
             <label class="label" for="oldpass">Input Old Password</label>
         </div>
         <div class="form-field col-lg-12">
-            <input id="newpass" class="input-text js-input" type="password" required>
+            <input id="newpass" name="newpass" class="input-text js-input" type="password" required>
             <label class="label" for="newpass">Input new Password</label>
         </div>
         <div class="form-field col-lg-12 ">
-            <input id="repass" class="input-text js-input" type="password" required>
+            <input id="repass" name="repass" class="input-text js-input" type="password" required>
             <label class="label" for="repass">Input Password again</label>
         </div>
         <div class="form-field col-lg-12">
