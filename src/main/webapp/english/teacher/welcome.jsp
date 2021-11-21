@@ -116,7 +116,7 @@
                     <li class="dropdown">
                         <a href="https://www.jquery-az.com/bootstrap-tips-tutorials/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bootstrap <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="https://www.jquery-az.com/bootstrap-carousel-5-single-multiple-horizontal-and-vertical-sliding-demos/">Carousel</a></li>
+                            <li><a href="/TeacherServlet?action=edit&id=${teacher.id}">Edit Information</a></li>
                             <li><a href="https://www.jquery-az.com/bootstrap-form-customized-styles-6-online-examples/">Forms</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="https://www.jquery-az.com/bootstrap-select-5-beautiful-styles/">Select</a></li>

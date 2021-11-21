@@ -2,7 +2,6 @@ package englishcenter.controller.adminservlet;
 
 import englishcenter.model.Admin;
 import englishcenter.service.adminservice.AdminService;
-import englishcenter.service.ministryservice.MinistryService;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
