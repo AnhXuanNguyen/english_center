@@ -98,11 +98,11 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 <c:if test="${ministry!=null}">
-    <c:if test="${mes!=null}">
-        <h2>${mes}</h2>
+    <c:if test="${ministry!=null}">
+        <h2 align="center">Account: ${ministry.name}</h2>
     </c:if>
     <section class="get-in-touch">
-        <h1 class="title">sửa em đi</h1>
+        <h1 class="title">Cho em cái PASS mới nào</h1>
         <form class="contact-form row" method="post">
             <div class="form-field col-lg-6">
                 <input name="oldpass" id="name" class="input-text js-input" type="password" required>
