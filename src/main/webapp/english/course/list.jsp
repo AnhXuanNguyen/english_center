@@ -135,20 +135,6 @@
     </style>
 </head>
 <body>
-<<<<<<< HEAD
-<a href="/CourseServlet?action=create&mid=${ministryid}">Them</a>
-<table>
-    <tr><th>Name</th></tr>
-    <c:forEach items="${courses}" var="course">
-        <tr>
-            <td>${course.name}</td>
-            <td><a href="/CourseServlet?action=edit&id=${course.id}&mid=${ministryid}">Sua</a></td>
-            <td><a href="/CourseServlet?action=drop&id=${course.id}&mid=${ministryid}">Xoa</a></td>
-        </tr>
-    </c:forEach>
-    <a href="/MinistryServlet?action=welcome&id=${ministryid}">quay lai trang chu</a>
-</table>
-=======
 <div class="container">
     <h3 style="margin-left: 40px"><a style="color: yellow" href="/CourseServlet?action=create&mid=${ministryid}">THÊM KHOÁ HỌC</a></h3>
     <div class="row">
@@ -189,7 +175,7 @@
 <p align="center" style="margin: 20px">
     <a style="color: white" href="/MinistryServlet?action=welcome&id=${ministryid}">Back to Ministry home</a>
 </p>
->>>>>>> e60e35b9b8b0912c0c34a7710ddc8f39d9c23e20
+
 </body>
 </html>
 <%--<html>--%>
