@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: 84888
@@ -6,6 +6,7 @@
   Time: 4:46 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -26,7 +27,7 @@
         <h2>${mes}</h2>
     </c:if>
     <div class="container bootstrap snippets bootdey">
-        <h1 class="text-primary">Edit Profile</h1>
+        <h1 class="text-primary">Edit Password Profile</h1>
         <hr>
         <div class="row">
             <!-- left column -->
@@ -48,7 +49,7 @@
                 </div>
                 <h3>Personal info</h3>
 
-                <form class="form-horizontal" role="form">
+                <form class="form-horizontal" role="form" method="post">
                     <div class="form-group">
                         <label class="col-lg-3 control-label">Enter old password</label>
                         <div class="col-lg-8">
@@ -92,25 +93,6 @@
         </div>
     </div>
     <hr>
-<%--    <form method="post">--%>
-<%--        <table>--%>
-<%--            <tr>--%>
-<%--                <th>Nhap mat khau cu</th>--%>
-<%--                <td><input type="password" name="oldpass"></td>--%>
-<%--            </tr>--%>
-<%--            <tr>--%>
-<%--                <th>Nhap mat khau moi</th>--%>
-<%--                <td><input type="password" name="newpass"></td>--%>
-<%--            </tr>--%>
-<%--            <tr>--%>
-<%--                <th>Nhap lai mat khau</th>--%>
-<%--                <td><input type="password" name="repass"></td>--%>
-<%--            </tr>--%>
-<%--            <tr>--%>
-<%--                <td><input type="submit" value="Doi mat khau"></td>--%>
-<%--            </tr>--%>
-<%--        </table>--%>
-<%--    </form>--%>
     <a href="/TeacherServlet?action=welcome&id=${teacher.id}">Back to Home Page</a>
 </c:if>
 </body>
